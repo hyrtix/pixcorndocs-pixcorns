@@ -1,6 +1,6 @@
-# Pixcorn Payment Gateway API Documentation (pixcorns.com)
+# Pixcorns Payment Gateway API Documentation (pixcorns.com)
 
-Documentation officielle de l'API Payment Gateway Pixcorn pour **pixcorns.com**.
+Documentation officielle de l'API Payment Gateway Pixcorns pour **pixcorns.com**.
 
 ## 📚 Documentation
 
@@ -49,10 +49,10 @@ La documentation sera générée dans `_build/html/`.
 ## 🌐 URLs
 
 - **Site principal** : https://pixcorns.com
-- **API** : https://api.pixcorns.com
+- **API (marchands)** : https://pixcorns.com (endpoints `/payments/api/`)
 - **Checkout** : https://checkout.pixcorns.com
 - **Admin** : https://pixcorns.com/admin/
 
 ## 📝 Licence
 
-© 2025 Pixcorn Digital Solutions. Tous droits réservés.
+© 2025 Pixcorns. Tous droits réservés.

@@ -1,7 +1,7 @@
 Error Handling
 ==============
 
-Pixcorn API uses standard HTTP status codes to indicate success or failure.
+Pixcorns API uses standard HTTP status codes to indicate success or failure.
 
 HTTP Status Codes
 -----------------

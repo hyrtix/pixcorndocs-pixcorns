@@ -6,9 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Pixcorn Payment Gateway (pixcorns.com)'
-copyright = '2025, Pixcorn'
-author = 'Pixcorn'
+project = 'Pixcorns Payment Gateway (pixcorns.com)'
+copyright = '2025, Pixcorns'
+author = 'Pixcorns'
 release = '1.0'
 
 # -- General configuration ---------------------------------------------------

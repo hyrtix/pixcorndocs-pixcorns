@@ -1,12 +1,12 @@
 Webhooks
 ========
 
-Pixcorn sends webhook notifications to your configured webhook URL when payment events occur.
+Pixcorns sends webhook notifications to your configured webhook URL when payment events occur.
 
 Webhook Configuration
 ---------------------
 
-Your webhook URL is configured by the Pixcorn admin when your merchant account is created. You can also specify a custom webhook URL per payment request.
+Your webhook URL is configured by the Pixcorns admin when your merchant account is created. You can also specify a custom webhook URL per payment request.
 
 Webhook Events
 --------------
@@ -18,7 +18,7 @@ Currently supported events:
 Payment Paid Event
 ------------------
 
-When a payment is completed, Pixcorn sends a POST request to your webhook URL.
+When a payment is completed, Pixcorns sends a POST request to your webhook URL.
 
 Request Headers
 ---------------
@@ -26,7 +26,7 @@ Request Headers
 .. code-block:: text
 
    Content-Type: application/json
-   User-Agent: Pixcorn-Webhook/1.0
+   User-Agent: Pixcorns-Webhook/1.0
 
 Request Body
 ------------
@@ -41,15 +41,20 @@ Request Body
      "amount": "100.00",
      "currency": "EUR",
      "payout_amount": "94.00",
+     "merchant_payout_usdc": "94.00",
+     "paid_amount_usdc": "100.00",
      "coin_type": "polygon_usdc",
      "txid": "0x1234567890abcdef...",
+     "txid_out": "0x1234567890abcdef...",
      "paid_at": "2025-01-15T10:30:00Z"
    }
+
+The ``payout_amount`` and ``merchant_payout_usdc`` fields contain the same value (USDC received by the merchant). Use either for compatibility.
 
 Webhook Security
 ----------------
 
-**Important**: Always verify webhook requests originate from Pixcorn.
+**Important**: Always verify webhook requests originate from Pixcorns.
 
 Recommended security measures:
 
@@ -145,7 +150,7 @@ Your webhook endpoint must:
 2. **Handle duplicate requests** (idempotency)
 3. **Log all requests** for debugging
 
-If your endpoint doesn't respond within 5 seconds or returns an error, Pixcorn will retry the webhook up to 3 times with exponential backoff.
+If your endpoint doesn't respond within 5 seconds or returns an error, Pixcorns will retry the webhook up to 3 times with exponential backoff.
 
 Testing Webhooks
 ----------------
@@ -158,4 +163,4 @@ You can test your webhook endpoint using tools like:
 Questions?
 ----------
 
-If you need help configuring webhooks or have questions, please contact the Pixcorn admin team.
+If you need help configuring webhooks or have questions, please contact the Pixcorns admin team.

@@ -4,7 +4,7 @@ Payment API
 Overview
 --------
 
-The Pixcorn Payment API allows you to create crypto payment links for your customers. Payments are processed via USDC on Polygon network through pixcorns.com.
+The Pixcorns Payment API allows you to create crypto payment links for your customers. Payments are processed via USDC on Polygon network through pixcorns.com.
 
 **Base URL**: ``https://pixcorns.com``
 
@@ -61,9 +61,12 @@ Request Body
    * - ``order_id``
      - string
      - Your internal order ID
+   * - ``payment_method``
+     - string
+     - Optional: preferred payment method (stripe, apple_pay, google_pay, sepa, paypal, etc.). Leave empty for customer to choose.
 
 .. important::
-   Your **wallet address** and **webhook URL** must be configured in your merchant account by the Pixcorn admin before you can create payments. These are used automatically for all payments.
+   Your **wallet address** and **webhook URL** must be configured in your merchant account by the Pixcorns admin before you can create payments. These are used automatically for all payments.
    
    - **Wallet address**: Required - Your USDC Polygon address to receive payouts
    - **Webhook URL**: Required - Your endpoint to receive payment notifications
@@ -173,6 +176,6 @@ Response
 Commission Structure
 -------------------
 
-Commission rates are configured per merchant by the Pixcorn admin. You will receive the exact payout amount specified in the API response and webhook notifications.
+Commission rates are configured per merchant by the Pixcorns admin. You will receive the exact payout amount specified in the API response and webhook notifications.
 
 Your specific commission rate will be provided when your account is created.

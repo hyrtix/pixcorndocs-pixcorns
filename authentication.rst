@@ -4,12 +4,12 @@ Authentication
 API Key Authentication
 ----------------------
 
-All API requests must be authenticated using an API key provided by the Pixcorn admin team.
+All API requests must be authenticated using an API key provided by the Pixcorns admin team.
 
 Getting Your API Key
 --------------------
 
-**Important**: Your API key is created automatically by the Pixcorn admin when your merchant account is set up.
+**Important**: Your API key is created automatically by the Pixcorns admin when your merchant account is set up.
 
 When your account is created, you will receive:
 
@@ -70,4 +70,4 @@ If your API key is missing or invalid, you will receive a ``401 Unauthorized`` r
 Questions?
 ----------
 
-If you need an API key or have questions about your account, please contact the Pixcorn admin team.
+If you need an API key or have questions about your account, please contact the Pixcorns admin team.
