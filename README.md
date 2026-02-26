@@ -19,16 +19,6 @@ curl -X POST https://pixcorns.com/payments/api/create/ \
   }'
 ```
 
-## 🌐 Configuration DNS (pixcorns.com)
-
-| Type | Nom | Valeur |
-|------|-----|--------|
-| A | @ | 92.222.229.242 |
-| A | www | 92.222.229.242 |
-| A | api | 92.222.229.242 |
-| A | checkout | 92.222.229.242 |
-
-Voir `DNS_SETUP.md` pour les instructions détaillées par registrar (GoDaddy, Cloudflare, etc.).
 
 ## 📖 Contenu
 
@@ -51,7 +41,7 @@ La documentation sera générée dans `_build/html/`.
 - **Site principal** : https://pixcorns.com
 - **API (marchands)** : https://pixcorns.com (endpoints `/payments/api/`)
 - **Checkout** : https://checkout.pixcorns.com
-- **Admin** : https://pixcorns.com/admin/
+- **Admin** : Contact via pannel
 
 ## 📝 Licence
 
